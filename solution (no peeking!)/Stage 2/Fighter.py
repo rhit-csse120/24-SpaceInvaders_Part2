@@ -21,6 +21,8 @@ class Fighter:
         self.explosion_sound = None
         self.has_exploded = None
 
+        self.missiles = None  # Temporary value
+
         print("Constructed a Fighter.")  # Temporary
 
     def draw(self):

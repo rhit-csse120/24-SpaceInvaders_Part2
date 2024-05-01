@@ -13,8 +13,8 @@ class Missile:
         self.width = width
         self.height = height
         self.speed = speed
-        self.is_off_the_screen = False
-        self.has_exploded = False
+        self.is_off_the_screen = None
+        self.has_exploded = None
 
     def draw(self):
         """ Draw this Missile as a vertical line. """
@@ -28,8 +28,6 @@ class Missile:
         (and if so, set is_off_the_screen to True.
         """
         self.y = self.y - self.speed
-        if self.y + self.height <= 0:
-            self.is_off_the_screen = True
 
     def explode(self):
         """ This Missile explodes: set has_exploded to True. """

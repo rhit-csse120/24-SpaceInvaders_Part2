@@ -17,7 +17,7 @@ class Enemies:
         self.h_speed = h_speed
         self.v_speed = v_speed
 
-        throw_away_enemy = Enemy(screen)
+        throw_away_enemy = Enemy(screen)  # Temporary
         enemy_width = throw_away_enemy.image.get_width()
         enemy_height = throw_away_enemy.image.get_height()
 

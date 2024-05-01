@@ -17,9 +17,9 @@ class Enemy:
         self.v_speed = v_speed
         self.direction = 1
         self.original_x = x
-        self.is_off_the_screen = False
-        self.has_exploded = False
-        self.explosion_sound = pygame.mixer.Sound("../assets/explosion.wav")
+        self.is_off_the_screen = None
+        self.has_exploded = None
+        self.explosion_sound = None
 
     def draw(self):
         """ Draw (blit) the image of this Fighter. """
@@ -35,8 +35,6 @@ class Enemy:
             # Reverse direction and move down
             self.direction = -self.direction
             self.y = self.y + self.v_speed
-        if self.y > self.screen.get_height():
-            self.is_off_the_screen = True
 
     def is_hit_by(self, missile: Missile):
         """ True if this Enemy and the given Missile overlap. """

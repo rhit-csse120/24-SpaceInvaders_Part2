@@ -23,8 +23,8 @@ class Fighter:
 
         self.speed = speed
         self.fire_sound = pygame.mixer.Sound("../assets/pew.wav")
-        self.explosion_sound = pygame.mixer.Sound("../assets/explosion.wav")
-        self.has_exploded = False
+        self.explosion_sound = None
+        self.has_exploded = None
 
         self.missiles = missiles
 

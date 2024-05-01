@@ -24,6 +24,8 @@ class Fighter:
         self.explosion_sound = None
         self.has_exploded = None
 
+        self.missiles = None  # Temporary value
+
     def draw(self):
         """ Draw (blit) the image of this Fighter. """
         self.screen.blit(self.image, (self.x, self.y))
