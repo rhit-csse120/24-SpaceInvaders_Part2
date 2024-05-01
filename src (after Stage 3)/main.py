@@ -1,22 +1,21 @@
+# Authors: Frodo, Pippin and Sam.
+
 import pygame
 from Game import Game
 from Controller import Controller
 from View import View
 
 
-# TODO: Put your names here (entire team)
-
-
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((640, 650))  # TODO: Choose your own size
-    pygame.display.set_caption("My Project")  # TODO: Choose your own title
+    screen = pygame.display.set_mode((640, 650))
+    pygame.display.set_caption("Space Invaders")
     clock = pygame.time.Clock()
     game = Game(screen)  # the Model
     viewer = View(screen, game)  # the View
     controller = Controller(game)  # the Controller
 
-    frame_rate = 60  # TODO: Choose your own frame rate
+    frame_rate = 60
 
     while True:
         clock.tick(frame_rate)
