@@ -7,24 +7,20 @@ from Enemy import Enemy
 class Fighter:
     """ The player can move the Fighter left/right and shoot missiles. """
 
-    def __init__(self, screen: pygame.Surface, speed=5):
-        self.screen = screen
-        self.image = pygame.image.load("../assets/fighter.png")
-        self.width = self.image.get_width()
-        self.height = self.image.get_height()
+    def __init__(self):
+        self.screen = None
+        self.image = None
+        self.width = None
+        self.height = None
 
-        # Fighter starts centered horizontally, near the bottom of screen.
-        image_at_bottom = self.screen.get_height() - self.height
-        distance_from_bottom = 5
-        self.x = (self.screen.get_width() - self.width) // 2
-        self.y = image_at_bottom - distance_from_bottom
+        self.x = None
+        self.y = None
 
-        self.speed = speed
-        self.fire_sound = pygame.mixer.Sound("../assets/pew.wav")
-        self.explosion_sound = pygame.mixer.Sound("../assets/explosion.wav")
-        self.has_exploded = False
+        self.speed = None
+        self.fire_sound = None
+        self.explosion_sound = None
+        self.has_exploded = None
 
-        self.missiles = None  # Temporary value
         print("Constructed a Fighter.")  # Temporary
 
     def draw(self):

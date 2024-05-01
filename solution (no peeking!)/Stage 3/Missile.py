@@ -4,17 +4,17 @@ import pygame
 
 
 class Missile:
-    def __init__(self, screen: pygame.Surface, x, y, color="red", width=4,
-                 height=8, speed=5):
+    def __init__(self, screen: pygame.Surface, x, y, color="red",
+                 width=4, height=8):
         self.screen = screen
         self.x = x
         self.y = y
         self.color = color
         self.width = width
         self.height = height
-        self.speed = speed
-        self.is_off_the_screen = False
-        self.has_exploded = False
+        self.speed = None
+        self.is_off_the_screen = None
+        self.has_exploded = None
 
     def draw(self):
         """ Draw this Missile as a vertical line. """

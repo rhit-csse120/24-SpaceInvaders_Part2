@@ -4,17 +4,16 @@ import pygame
 
 
 class Missile:
-    def __init__(self, screen: pygame.Surface, x, y, color="red", width=4,
-                 height=8, speed=5):
-        self.screen = screen
-        self.x = x
-        self.y = y
-        self.color = color
-        self.width = width
-        self.height = height
-        self.speed = speed
-        self.is_off_the_screen = False
-        self.has_exploded = False
+    def __init__(self):
+        self.screen = None
+        self.x = None
+        self.y = None
+        self.color = None
+        self.width = None
+        self.height = None
+        self.speed = None
+        self.is_off_the_screen = None
+        self.has_exploded = None
 
         print("Constructed a Missile.")  # Temporary
 

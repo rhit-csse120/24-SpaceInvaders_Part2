@@ -5,21 +5,20 @@ from Missile import Missile
 
 
 class Enemy:
-    def __init__(self, screen: pygame.Surface,
-                 x=100, y=50, h_speed=5, v_speed=10):
-        self.screen = screen
-        self.image = pygame.image.load("../assets/badguy.png")
-        self.width = self.image.get_width()
-        self.height = self.image.get_height()
-        self.x = x
-        self.y = y
-        self.h_speed = h_speed  # Increase speeds to make the game harder.
-        self.v_speed = v_speed
-        self.direction = 1
-        self.original_x = x
-        self.is_off_the_screen = False
-        self.has_exploded = False
-        self.explosion_sound = pygame.mixer.Sound("../assets/explosion.wav")
+    def __init__(self):
+        self.screen = None
+        self.image = None
+        self.width = None
+        self.height = None
+        self.x = None
+        self.y = None
+        self.h_speed = None
+        self.v_speed = None
+        self.direction = None
+        self.original_x = None
+        self.is_off_the_screen = None
+        self.has_exploded = None
+        self.explosion_sound = None
 
         print("Constructed an Enemy.")  # Temporary
 
