@@ -26,12 +26,14 @@ class Controller:
 
     @staticmethod
     def exit_if_time_to_quit(events):
+        """ Exits the program if the QUIT event occurs. """
         for event in events:
             if event.type == pygame.QUIT:
                 sys.exit()
 
     @staticmethod
     def key_was_pressed_on_this_cycle(key, events):
+        """ Returns True if the given key was pressed on this cycle. """
         for event in events:
             if event.type == pygame.KEYDOWN and event.key == key:
                 return True

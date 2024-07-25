@@ -25,8 +25,8 @@ class Missile:
     def move(self):
         """
         Move this Missile up, unless it is off the screen
-        (and if so, set is_off_the_screen to True.
+        (and if so, set  is_off_the_screen  to True).
         """
 
     def explode(self):
-        """ This Missile explodes: set has_exploded to True. """
+        """ This Missile explodes: set  has_exploded  to True. """

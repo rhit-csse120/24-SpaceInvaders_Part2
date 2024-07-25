@@ -30,7 +30,7 @@ class Enemy:
         """
 
     def is_hit_by(self, missile: Missile):
-        """ True if this Enemy and the given Missile overlap. """
+        """ Returns True if this Enemy and the given Missile overlap. """
 
     def explode(self):
         """ This Enemy explodes: Play a sound and set has_exploded to True. """

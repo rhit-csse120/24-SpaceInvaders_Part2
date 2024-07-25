@@ -25,6 +25,4 @@ class Game:
 
     def run_one_cycle(self):
         """ All objects that do something at each cycle: ask them to do it. """
-        # TODO: Use something like this, but for the objects in YOUR game:
-        #     self.missiles.move()
-        #     self.missiles.handle_explosions(self.enemies)
+        # TODO: Implement this method.
