@@ -11,7 +11,7 @@ class Fighter:
 
     def __init__(self, screen: pygame.Surface, missiles: Missiles, speed=5):
         self.screen = screen
-        self.image = pygame.image.load("../assets/fighter.png")
+        self.image = pygame.image.load("../media/fighter.png")
         self.width = self.image.get_width()
         self.height = self.image.get_height()
 
@@ -22,8 +22,8 @@ class Fighter:
         self.y = image_at_bottom - distance_from_bottom
 
         self.speed = speed
-        self.fire_sound = pygame.mixer.Sound("../assets/pew.wav")
-        self.explosion_sound = pygame.mixer.Sound("../assets/explosion.wav")
+        self.fire_sound = pygame.mixer.Sound("../media/pew.wav")
+        self.explosion_sound = pygame.mixer.Sound("../media/explosion.wav")
         self.has_exploded = False
 
         self.missiles = missiles

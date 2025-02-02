@@ -1,4 +1,16 @@
-# Authors: Frodo, Pippin and Sam.
+"""
+The  main  file for the Model-View-Controller (MVC) architecture for our game.
+It:
+   1. Initializes pygame, the screen and a Clock (for the frame rate).
+   2. Constructs a Game (model), View and Controller.
+   3. Runs the game loop, which repeatedly (per the frame rate):
+      -- Asks the Controller object to get and respond to events.
+      -- Asks the Game object to run one cycle.
+      -- Asks the View object to draw everything.
+
+Team members:
+"""
+# TODO: Put the names of your entire team in the above doc-string.
 
 import pygame
 from Game import Game

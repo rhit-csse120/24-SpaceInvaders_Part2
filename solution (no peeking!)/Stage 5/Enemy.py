@@ -8,7 +8,7 @@ class Enemy:
     def __init__(self, screen: pygame.Surface,
                  x=100, y=50, h_speed=5, v_speed=10):
         self.screen = screen
-        self.image = pygame.image.load("../assets/badguy.png")
+        self.image = pygame.image.load("../media/badguy.png")
         self.width = self.image.get_width()
         self.height = self.image.get_height()
         self.x = x

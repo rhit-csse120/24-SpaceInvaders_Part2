@@ -11,11 +11,11 @@ from Missiles import Missiles
 class Game:
     def __init__(self, screen: pygame.Surface):
         self.screen = screen
-        self.fighter = Fighter(screen)
+        self.fighter = Fighter()
         self.enemies = Enemies()
         self.missiles = Missiles()
-        self.enemy = Enemy(screen)  # For testing
-        self.missile = Missile(screen, 100, 300)  # For testing
+        self.enemy = Enemy()  # For testing
+        self.missile = Missile()  # For testing
 
     def draw_game(self):
         """ Ask all the objects in the game to draw themselves. """

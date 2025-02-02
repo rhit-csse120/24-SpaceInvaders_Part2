@@ -15,9 +15,9 @@ class Game:
         self.fighter = Fighter(screen, self.missiles)
         self.enemies = Enemies(screen)
 
-        self.sound_to_play_when_win = pygame.mixer.Sound("../assets/win.wav")
-        self.sound_to_play_when_lose = pygame.mixer.Sound("../assets/lose.wav")
-        self.game_over_image = pygame.image.load("../assets/gameover.png")
+        self.sound_to_play_when_win = pygame.mixer.Sound("../media/win.wav")
+        self.sound_to_play_when_lose = pygame.mixer.Sound("../media/lose.wav")
+        self.game_over_image = pygame.image.load("../media/gameover.png")
         self.position_for_game_over_image = (170, 200)
         self.game_is_over = False
         self. enemy_fleet_was_destroyed = False

@@ -9,7 +9,7 @@ class Fighter:
 
     def __init__(self, screen: pygame.Surface, speed=5):
         self.screen = screen
-        self.image = pygame.image.load("../assets/fighter.png")
+        self.image = pygame.image.load("../media/fighter.png")
         self.width = self.image.get_width()
         self.height = self.image.get_height()
 
