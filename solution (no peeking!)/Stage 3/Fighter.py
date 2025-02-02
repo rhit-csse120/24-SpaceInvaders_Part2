@@ -36,7 +36,7 @@ class Fighter:
     def move_right(self):
         """ Move this Fighter right, unless doing so would go past the edge. """
 
-    def fire(self):
+    def fire_missile(self):
         """
         Fires a missile: constructs it (placing it at the top of this Fighter,
         centered horizontally on this Fighter), adds it to the Missiles object

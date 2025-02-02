@@ -40,7 +40,7 @@ class Fighter:
         if self.x < self.screen.get_width() - self.width / 2:
             self.x = self.x + self.speed
 
-    def fire(self):
+    def fire_missile(self):
         """
         Fires a missile: constructs it (placing it at the top of this Fighter,
         centered horizontally on this Fighter), adds it to the Missiles object

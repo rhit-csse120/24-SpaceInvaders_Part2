@@ -24,7 +24,7 @@ class Controller:
         if pressed_keys[pygame.K_RIGHT]:
             self.game.fighter.move_right()
         if self.key_was_pressed_on_this_cycle(pygame.K_SPACE, events):
-            self.game.fighter.fire()
+            self.game.fighter.fire_missile()
 
     @staticmethod
     def exit_if_time_to_quit(events):
