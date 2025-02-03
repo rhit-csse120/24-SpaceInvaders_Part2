@@ -20,7 +20,7 @@ class Game:
         self.game_over_image = pygame.image.load("../media/gameover.png")
         self.position_for_game_over_image = (170, 200)
         self.game_is_over = False
-        self. enemy_fleet_was_destroyed = False
+        self.enemy_fleet_was_destroyed = False
 
     def draw_game(self):
         """ Ask all the objects in the game to draw themselves. """
@@ -55,7 +55,6 @@ class Game:
             # Just set a flag for the next iteration of run_one_cycle,
             # so that any events not yet processed can be processed.
             self.enemy_fleet_was_destroyed = True
-
 
     def start_a_new_game(self, enemy_rows=5):
         # To be implemented later.

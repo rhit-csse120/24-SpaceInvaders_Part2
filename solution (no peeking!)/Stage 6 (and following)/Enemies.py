@@ -54,4 +54,3 @@ class Enemies:
             enemy = self.list_of_enemies[k]
             if enemy.is_off_the_screen or enemy.has_exploded:
                 del self.list_of_enemies[k]
-

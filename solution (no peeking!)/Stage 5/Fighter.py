@@ -57,5 +57,3 @@ class Fighter:
 
     def explode(self):
         """ This Fighter explodes: Play a sound and set has_exploded to True. """
-
-

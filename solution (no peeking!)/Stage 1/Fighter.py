@@ -3,5 +3,3 @@
 
 class Fighter:
     pass
-
-

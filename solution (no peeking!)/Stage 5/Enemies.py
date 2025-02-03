@@ -49,4 +49,3 @@ class Enemies:
 
     def remove_exploded_enemies(self):
         pass
-

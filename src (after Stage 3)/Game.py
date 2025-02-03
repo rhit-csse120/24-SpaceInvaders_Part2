@@ -1,5 +1,20 @@
-# Authors: Frodo, Pippin and Sam.
+"""
+The  Game (model)  file for the Model-View-Controller architecture for our game.
+1. It constructs all the objects specific to this game.
+2. Its   draw_game   method is called repeatedly by the main game loop and
+   typically asks each of the Game's objects to draw themselves.
+3. Its   run_one_cycle   method is called repeatedly by the main game loop and
+   typically asks each of the Game's objects to do whatever needs to happen
+   independently of events / user-input.
 
+Team members:
+"""
+# TODO: Put the names of your entire team in the above doc-string.
+
+"""
+Academic Integrity: I got help on this module from:
+         PUT_HERE_THE_NAMES_OF_PEOPLE_WHO_HELPED_YOU_ON_THIS_MODULE_(IF_ANY).
+"""  # TODO: If you got help from anyone on this module, list their names here.
 import pygame
 from Fighter import Fighter
 from Enemy import Enemy

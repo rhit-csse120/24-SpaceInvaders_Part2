@@ -26,5 +26,3 @@ class Missiles:
 
     def handle_explosions(self, enemies: Enemies):
         pass
-
-

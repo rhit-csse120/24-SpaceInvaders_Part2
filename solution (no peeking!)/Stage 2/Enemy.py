@@ -35,5 +35,3 @@ class Enemy:
 
     def explode(self):
         """ This Enemy explodes: Play a sound and set has_exploded to True. """
-
-
